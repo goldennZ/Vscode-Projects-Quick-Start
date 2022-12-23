@@ -1,3 +1,7 @@
+# !!Atenção!!
+O programa não contém um **certificado**, com isso, para o windows ele será considerado como algo malicioso.
+
+O programa é Open-Source, ou seja, você poderá verificar todos os arquivos.
 # O que é?
 
 **Quick Start Projects** é um aplicativo com a finalidade de facilitar a organização e a abertura de projetos no Visual Studio Code.
