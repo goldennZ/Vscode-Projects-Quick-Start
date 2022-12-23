@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+}
+
+body::-webkit-scrollbar {
+  display: none; /* for Chrome, Safari, and Opera */
+}
+
+main {
+  display: grid;
+  grid-template-rows: 35px auto;
+  border-radius: 6px;
+  background-color: rgba(21, 21, 21, 0.98);
+  border: 2px solid #373737;
+  height: 448px;
+}
+
+.titlebar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  -webkit-app-region: drag;
+}
+
+.titlebar h4 {
+  color: #eeeeee;
+  padding-left: 20px;
+  font-size: 12px;
+}
+
+.titlebar button {
+  -webkit-app-region: none;
+  background-color: transparent;
+  color: rgb(142, 142, 142);
+  font-size: 16px;
+  padding: 0 10px;
+  border: none;
+}
+.titlebar #minimize {
+  font-weight: 600;
+}
+
+.titlebar #minimize:hover {
+  background-color: #666666;
+}
+
+.titlebar #close:hover {
+  background-color: #bc3b3b;
+}
+
+.workspace {
+  display: flex;
+  flex-direction: column;
+  padding-top: 40px;
+  align-items: center;
+  border-top: 2px solid #202020;
+  color: #eeeeee;
+}
+
+.workspace .list-docs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.workspace .list-docs #list-proj {
+  height: 250px;
+  overflow: scroll;
+  border: 2px solid #202020;
+  border-radius: 6px;
+  padding: 0 15px;
+}
+
+.workspace .list-docs #list-proj::-webkit-scrollbar{
+  display: none;
+}
+
+.workspace .list-docs h6 {
+  font-size: 12px;
+  font-weight: 400;
+  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.workspace .list-docs h6 .img-1 {
+  padding: 5px;
+  border-radius: 6px;
+  background-color: #3bbc60;
+  margin-right: 2px;
+  height: 9px;
+  cursor: pointer;
+}
+
+.workspace .list-docs h6 .img-2 {
+  padding: 5px;
+  border-radius: 6px;
+  background-color: #bc3b3b;
+  height: 9px;
+  cursor: pointer;
+}
+
+.workspace .list-docs .list-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+  margin-bottom: 60px;
+}
+
+.workspace .list-docs .list-title img{
+  padding: 5px;
+  border-radius: 6px;
+  background-color: #3bbc60;
+  cursor: pointer;
+}
+
+.workspace .list-docs .list-title img:hover{
+  background-color: #25713b;
+}
+
+.workspace .list-docs .list-line {
+  width: 163px;
+  height: 1px;
+  background-color: #222222;
+  border-radius: 6px;
+}

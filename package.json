@@ -1,0 +1,34 @@
+{
+  "name": "quick-start-vscode",
+  "version": "1.0.0",
+  "description": "Quick Start Your VsCode Projects",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron main.js",
+    "dist": "electron-builder"
+  },
+  "keywords": [],
+  "author": "João Arrigo",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^21.2.3",
+    "electron-builder": "^23.6.0"
+  },
+  "dependencies": {
+    "@electron/remote": "^2.0.9",
+    "cross-spawn": "^7.0.3",
+    "electron-store": "^8.1.0"
+  },
+  "build": {
+    "appId": "com.electron.app",
+    "productName": "VsCode Quick Projects",
+    "target": "NSIS",
+    "directories": {
+      "output": "build"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    }
+  }
+}
